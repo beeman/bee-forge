@@ -9,13 +9,12 @@ export function AuthUiSignIn({ isSigningIn, onSignIn }: { isSigningIn: boolean; 
           <View className="gap-3">
             <Text className="text-2xl font-semibold text-neutral-950 dark:text-neutral-50">Bee Forge</Text>
             <Text className="text-base leading-6 text-neutral-600 dark:text-neutral-400">
-              This starter includes a placeholder auth gate for protected routes. Replace it with your real auth flow,
-              or remove it if you do not need auth.
+              Sign a local Sign in with Solana message with your wallet to unlock the app.
             </Text>
           </View>
           <View className="gap-3">
             <Button className="w-full" onPress={onSignIn}>
-              {isSigningIn ? 'Signing in...' : 'Sign in'}
+              {isSigningIn ? 'Waiting for wallet...' : 'Sign in with Solana'}
             </Button>
           </View>
         </View>
