@@ -4,9 +4,9 @@ export function HomeUiCardToolsForExperiments() {
   return (
     <Card>
       <Card.Body className="gap-3">
-        <Card.Title>Tools for experiments</Card.Title>
+        <Card.Title>Run devnet tools</Card.Title>
         <Card.Description>
-          Mint devnet assets and run common builder workflows without setting up a full backend.
+          Mint test assets, fund accounts, and try common builder workflows from a mobile-first app.
         </Card.Description>
       </Card.Body>
     </Card>

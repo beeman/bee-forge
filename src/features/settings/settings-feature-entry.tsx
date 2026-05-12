@@ -5,11 +5,8 @@ import { ShellUiPageHeader } from '@/features/shell/ui/shell-ui-page-header'
 
 export function SettingsFeatureEntry() {
   return (
-    <ShellUiPage>
-      <ShellUiPageHeader
-        description="This generic settings is ready to add product-specific settings later."
-        title="Settings"
-      />
+    <ShellUiPage safeArea>
+      <ShellUiPageHeader description="Configure Bee Forge preferences and session behavior." title="Settings" />
       <SettingsUiCardAppearance />
       <SettingsFeatureAccount />
     </ShellUiPage>

@@ -4,7 +4,7 @@ export function HomeUiCardWalletFlows() {
   return (
     <Card>
       <Card.Body className="gap-3">
-        <Card.Title>Wallet flows in context</Card.Title>
+        <Card.Title>Test wallet flows</Card.Title>
         <Card.Description>
           Connect a wallet, inspect the active account, and try the signing flows mobile apps actually use.
         </Card.Description>

@@ -7,7 +7,7 @@ export function SettingsUiCardAppearance() {
     <Card>
       <Card.Body className="gap-3">
         <Card.Title>Appearance</Card.Title>
-        <Card.Description>Pick the theme for your app.</Card.Description>
+        <Card.Description>Choose how Bee Forge looks on this device.</Card.Description>
         <ShellUiThemeSwitcher />
       </Card.Body>
     </Card>

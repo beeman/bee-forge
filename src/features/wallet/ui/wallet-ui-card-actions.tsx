@@ -30,11 +30,15 @@ export function WalletUiCardActions({
     <Card>
       <Card.Body className="gap-3">
         <Card.Title>Actions</Card.Title>
-        <Card.Description>Connect, sign in, sign a message, send a memo transaction, or disconnect.</Card.Description>
+        <Card.Description>
+          {hasAccount
+            ? 'Test the wallet interactions most mobile apps need: sign in, sign a message, send a memo, or disconnect.'
+            : 'Connect a wallet to test the interactions most mobile apps need.'}
+        </Card.Description>
         <View className="gap-3">
           <View className="flex-row gap-3">
             <Button className="flex-1" isDisabled={hasAccount || isConnecting} onPress={connect}>
-              {isConnecting ? 'Connecting...' : 'Connect'}
+              {isConnecting ? 'Connecting...' : hasAccount ? 'Connected' : 'Connect wallet'}
             </Button>
             <Button
               className="flex-1"
@@ -46,7 +50,7 @@ export function WalletUiCardActions({
             </Button>
           </View>
           <Button isDisabled={isSigningIn} onPress={signIn} variant="secondary">
-            {isSigningIn ? 'Signing in...' : hasAccount ? 'Sign in with wallet' : 'Sign in and connect'}
+            {isSigningIn ? 'Signing in...' : hasAccount ? 'Sign in' : 'Sign in and connect'}
           </Button>
           <View className="flex-row gap-3">
             <Button

@@ -4,8 +4,8 @@ export function SettingsUiCardAccount({ isSigningOut, signOut }: { isSigningOut:
   return (
     <Card>
       <Card.Body className="gap-3">
-        <Card.Title>Account</Card.Title>
-        <Card.Description>Account details can be added here.</Card.Description>
+        <Card.Title>Session</Card.Title>
+        <Card.Description>Manage the current wallet and app session.</Card.Description>
         <Button className="w-full" onPress={signOut} variant="secondary">
           {isSigningOut ? 'Signing out...' : 'Sign out'}
         </Button>

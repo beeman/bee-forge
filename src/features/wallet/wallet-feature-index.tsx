@@ -17,9 +17,9 @@ export function WalletFeatureIndex() {
   const balanceLabel = balance.isLoading ? 'Loading...' : `${Number(balance.data?.value ?? 0n) / LAMPORTS_PER_SOL} SOL`
 
   return (
-    <ShellUiPage>
+    <ShellUiPage safeArea>
       <ShellUiPageHeader
-        description="Connect a Solana wallet, inspect the active account, and run the Mobile Wallet Adapter signing flows."
+        description="Connect a Solana wallet, inspect the active account, and try common Mobile Wallet Adapter flows."
         title="Wallet"
       />
       <WalletUiCardStatus

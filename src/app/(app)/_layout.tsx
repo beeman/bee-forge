@@ -10,10 +10,14 @@ export default function AppLayout() {
   const { backgroundColor } = useTheme()
 
   return (
-    <NativeTabs backgroundColor={backgroundColor} disableTransparentOnScrollEdge>
+    <NativeTabs backgroundColor={backgroundColor} disableTransparentOnScrollEdge labelVisibilityMode="labeled">
       <NativeTabs.Trigger name="home">
         <NativeTabs.Trigger.Icon md="home" sf="house.fill" />
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+      </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="tools">
+        <NativeTabs.Trigger.Icon md="build" sf="wrench.and.screwdriver.fill" />
+        <NativeTabs.Trigger.Label>Tools</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="wallet">
         <NativeTabs.Trigger.Icon md="account_balance_wallet" sf="wallet.pass.fill" />
