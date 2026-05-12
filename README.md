@@ -1,10 +1,11 @@
 # bee-forge
 
-Expo app built with Bun, Expo Router, HeroUI Native, and Uniwind.
+Expo app built with Bun, Expo Router, HeroUI Native, Uniwind, and Wallet UI.
 
 ## Features
 
 - Expo Router routes live in `src/app`, with authenticated users landing in a native tab shell.
+- Wallet UI is wired with `@solana/kit` and Mobile Wallet Adapter support on Solana devnet.
 - Uniwind powers light, dark, and system theme switching across the shell from the Settings tab.
 - HeroUI Native components are wired into the Dev tab for quick iteration.
 - AsyncStorage-backed auth state shows one simple client-side data flow.
@@ -24,7 +25,7 @@ Expo app built with Bun, Expo Router, HeroUI Native, and Uniwind.
    bun run start
    ```
 
-3. Open the app on your target platform.
+3. Build and run the Expo dev client on your target native platform, or start the web target.
 
    ```bash
    bun run ios
@@ -35,8 +36,8 @@ Expo app built with Bun, Expo Router, HeroUI Native, and Uniwind.
 ## Development Commands
 
 - `bun run start` starts the Expo development server.
-- `bun run ios` opens the iOS simulator flow.
-- `bun run android` opens the Android emulator flow.
+- `bun run ios` builds and runs the iOS dev client.
+- `bun run android` builds and runs the Android dev client.
 - `bun run web` starts the web target.
 - `bun run lint` runs ESLint.
 - `bun run lint:fix` runs ESLint with autofix.

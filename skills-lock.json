@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "install-wallet-ui-react-native": {
+      "source": "wallet-ui/wallet-ui",
+      "sourceType": "github",
+      "skillPath": ".ruler/skills/install-wallet-ui-react-native/SKILL.md",
+      "computedHash": "68037269a74985e7be8d103f929dfdb150507deeaaa1b49e6e601396a70461ec"
+    }
+  }
+}
