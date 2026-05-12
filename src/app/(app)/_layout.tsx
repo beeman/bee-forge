@@ -15,9 +15,9 @@ export default function AppLayout() {
         <NativeTabs.Trigger.Icon md="home" sf="house.fill" />
         <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="dev">
-        <NativeTabs.Trigger.Icon md="code" sf="wrench.and.screwdriver.fill" />
-        <NativeTabs.Trigger.Label>Dev</NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="wallet">
+        <NativeTabs.Trigger.Icon md="account_balance_wallet" sf="wallet.pass.fill" />
+        <NativeTabs.Trigger.Label>Wallet</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="settings">
         <NativeTabs.Trigger.Icon md="settings" sf="gearshape.fill" />

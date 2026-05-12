@@ -7,7 +7,7 @@ Expo app built with Bun, Expo Router, HeroUI Native, Uniwind, and Wallet UI.
 - Expo Router routes live in `src/app`, with authenticated users landing in a native tab shell.
 - Wallet UI is wired with `@solana/kit`, local Sign in with Solana auth, and Mobile Wallet Adapter support on Solana devnet.
 - Uniwind powers light, dark, and system theme switching across the shell from the Settings tab.
-- HeroUI Native components are wired into the Dev tab for quick iteration.
+- Wallet actions are wired into the Wallet tab for Mobile Wallet Adapter flows.
 - AsyncStorage-backed auth state shows one simple client-side data flow.
 - ESLint, Prettier, and strict TypeScript checks are included.
 
@@ -76,7 +76,7 @@ Each successful run uploads a direct-download APK asset to the daily `android-de
 
 ## Project Structure
 
-- `src/app` contains the Expo Router entrypoints, including the authenticated Home, Dev, and Settings tabs.
+- `src/app` contains the Expo Router entrypoints, including the authenticated Home, Settings, and Wallet tabs.
 - `src/features` holds feature-scoped UI, state, and data-access modules.
 - `src/features/core/data-access/app-providers.tsx` wires global providers into the root layout.
 - `src/global.css` is the Uniwind CSS entry file.

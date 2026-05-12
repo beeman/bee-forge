@@ -2,12 +2,12 @@ import { Stack } from 'expo-router'
 
 import { useTheme } from '@/features/shell/data-access/use-theme'
 
-export default function DevLayout() {
+export default function WalletLayout() {
   const { screenOptions } = useTheme()
 
   return (
     <Stack screenOptions={screenOptions}>
-      <Stack.Screen name="index" options={{ title: 'Dev' }} />
+      <Stack.Screen name="index" options={{ title: 'Wallet' }} />
     </Stack>
   )
 }
