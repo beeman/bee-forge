@@ -60,6 +60,7 @@
   "private": true,
   "scripts": {
     "android": "expo run:android",
+    "build:apk": "bun run build-android-apk.ts",
     "check-types": "tsc --noEmit",
     "ci": "bun run lint && bun run check-types",
     "ios": "expo run:ios",
