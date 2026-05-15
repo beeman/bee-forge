@@ -4,6 +4,7 @@ import { HeroUINativeProvider } from 'heroui-native'
 import { ReactNode } from 'react'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
+import { createSolanaClient } from '@/features/core/data-access/solana-client'
 import { useTheme } from '@/features/shell/data-access/use-theme'
 import { ShellUiThemeStatusBar } from '@/features/shell/ui/shell-ui-theme-status-bar'
 
@@ -18,7 +19,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
     <GestureHandlerRootView style={{ backgroundColor, flex: 1 }}>
       <HeroUINativeProvider config={{ devInfo: { stylingPrinciples: false } }}>
         <QueryClientProvider client={queryClient}>
-          <MobileWalletProvider cluster={cluster} identity={identity}>
+          <MobileWalletProvider cluster={cluster} createClient={createSolanaClient} identity={identity}>
             {children}
           </MobileWalletProvider>
         </QueryClientProvider>

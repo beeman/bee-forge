@@ -11,6 +11,7 @@
         "@react-navigation/native": "^7.1.33",
         "@solana-program/memo": "0.10.0",
         "@solana/kit": "6.9.0",
+        "@solana/kit-plugin-rpc": "0.11.1",
         "@tanstack/react-query": "5.99.2",
         "@wallet-ui/react-native-kit": "4.1.0",
         "clsx": "2.1.1",
@@ -520,6 +521,10 @@
     "@solana/keys": ["@solana/keys@6.9.0", "", { "dependencies": { "@solana/assertions": "6.9.0", "@solana/codecs-core": "6.9.0", "@solana/codecs-strings": "6.9.0", "@solana/errors": "6.9.0", "@solana/nominal-types": "6.9.0", "@solana/promises": "6.9.0" }, "peerDependencies": { "typescript": ">=5.4.0" }, "optionalPeers": ["typescript"] }, "sha512-1g2QARiqSjNqT0EIqLDLQ5vRm7hCsbqgFwFAp5GsMV/8BTYT8s1Ct2wLHDZiJ4eAX6beTHVf8LbOBfVejtn3oQ=="],
 
     "@solana/kit": ["@solana/kit@6.9.0", "", { "dependencies": { "@solana/accounts": "6.9.0", "@solana/addresses": "6.9.0", "@solana/codecs": "6.9.0", "@solana/errors": "6.9.0", "@solana/functional": "6.9.0", "@solana/instruction-plans": "6.9.0", "@solana/instructions": "6.9.0", "@solana/keys": "6.9.0", "@solana/offchain-messages": "6.9.0", "@solana/plugin-core": "6.9.0", "@solana/plugin-interfaces": "6.9.0", "@solana/program-client-core": "6.9.0", "@solana/programs": "6.9.0", "@solana/rpc": "6.9.0", "@solana/rpc-api": "6.9.0", "@solana/rpc-parsed-types": "6.9.0", "@solana/rpc-spec-types": "6.9.0", "@solana/rpc-subscriptions": "6.9.0", "@solana/rpc-types": "6.9.0", "@solana/signers": "6.9.0", "@solana/subscribable": "6.9.0", "@solana/sysvars": "6.9.0", "@solana/transaction-confirmation": "6.9.0", "@solana/transaction-messages": "6.9.0", "@solana/transactions": "6.9.0" }, "peerDependencies": { "typescript": ">=5.4.0" }, "optionalPeers": ["typescript"] }, "sha512-k7BRz7Akfv8wiRtlCR/xUyDLfuMfYMelMR1+AC5KgwaRRJReDF0BucMLNN1In7WoI+KuWwr1OKv4na/oKpyeAQ=="],
+
+    "@solana/kit-plugin-instruction-plan": ["@solana/kit-plugin-instruction-plan@0.10.0", "", { "peerDependencies": { "@solana/kit": "^6.8.0" } }, "sha512-h99B+1Vp5QWU/M/q0UXlTxKJt781vWw5aAopnbgVCy0F3hNaSDZ/gio126Oz0/cipGOnyaJf3NnV79GvxaEqZA=="],
+
+    "@solana/kit-plugin-rpc": ["@solana/kit-plugin-rpc@0.11.1", "", { "dependencies": { "@solana/kit-plugin-instruction-plan": "0.10.0" }, "peerDependencies": { "@solana/kit": "^6.8.0" } }, "sha512-NpCKBY6y3lmOOZjzm5dvk/+iZsKOH+Wc9TQx5yKZ0RzNOXC6V9i0Inn+niVdkX5ECDJOmClfa64bLcImFJWLuQ=="],
 
     "@solana/nominal-types": ["@solana/nominal-types@6.9.0", "", { "peerDependencies": { "typescript": ">=5.4.0" }, "optionalPeers": ["typescript"] }, "sha512-ouhrnY7a6nsLXRGcariwcmHDdXroCNqOuzwtdjKt2c8e8Drwao9yxPH2VoViNgpq8IGNJeQMEI1TVnoJZRn0gw=="],
 
