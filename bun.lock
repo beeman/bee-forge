@@ -10,6 +10,9 @@
         "@react-navigation/elements": "^2.9.10",
         "@react-navigation/native": "^7.1.33",
         "@solana-program/memo": "0.10.0",
+        "@solana-program/system": "0.12.0",
+        "@solana-program/token": "0.13.0",
+        "@solana-program/token-2022": "0.9.0",
         "@solana/kit": "6.9.0",
         "@solana/kit-plugin-rpc": "0.11.1",
         "@tanstack/react-query": "5.99.2",
@@ -489,6 +492,12 @@
     "@solana-mobile/mobile-wallet-adapter-protocol-kit": ["@solana-mobile/mobile-wallet-adapter-protocol-kit@0.3.1", "", { "dependencies": { "@solana-mobile/mobile-wallet-adapter-protocol": "^2.2.8", "@solana/transaction-messages": "^6.0.0", "@solana/transactions": "^6.0.0", "bs58": "^6.0.0", "js-base64": "^3.7.7" }, "peerDependencies": { "@solana/kit": "^6.0.0" } }, "sha512-J+9ff1Uq016z1FlADMjCn8HOnGb791B10Cmwuzq8i9PBsrjPL+ftXRM4cVfvTqdU2uDLFY2FU43AanHluic0xg=="],
 
     "@solana-program/memo": ["@solana-program/memo@0.10.0", "", { "peerDependencies": { "@solana/kit": "^5.0" } }, "sha512-1FvQFenL3lzl5SpxhWV4QJCOLU/nvAOXGXjKjS7dprvG+0u971xoanApN7bM/a4NFZolp6S+lP2xVl6vTVIxbg=="],
+
+    "@solana-program/system": ["@solana-program/system@0.12.0", "", { "peerDependencies": { "@solana/kit": "^6.1.0" } }, "sha512-ZnAAWeGVMWNtJhw3GdifI2HnhZ0A0H0qs8tBkcFvxp/8wIavvO+GOM4Jd0N22u2+Lni2zcwvcrxrsxj6Mjphng=="],
+
+    "@solana-program/token": ["@solana-program/token@0.13.0", "", { "dependencies": { "@solana-program/system": "^0.12.0" }, "peerDependencies": { "@solana/kit": "^6.5.0" } }, "sha512-/Apjrd5lwOJGrPB0J5Rv7EBeclvyEBQPAGA85Scm7wBH+GpkbdLDM9uK3TNg8jjFKyWQYai/JtPHbrx7VgFLSg=="],
+
+    "@solana-program/token-2022": ["@solana-program/token-2022@0.9.0", "", { "peerDependencies": { "@solana/kit": "^6.0.0", "@solana/sysvars": "^5.0" } }, "sha512-j8fPBc/oUApYF7aW0ub6cIV7dbbtXC+Y6oDcI9SUs6BXXSq+lj7p7XRU+GEH8qWfyQ5ziRiOLI9s2AZjJY1Icg=="],
 
     "@solana/accounts": ["@solana/accounts@6.9.0", "", { "dependencies": { "@solana/addresses": "6.9.0", "@solana/codecs-core": "6.9.0", "@solana/codecs-strings": "6.9.0", "@solana/errors": "6.9.0", "@solana/rpc-spec": "6.9.0", "@solana/rpc-types": "6.9.0" }, "peerDependencies": { "typescript": ">=5.4.0" }, "optionalPeers": ["typescript"] }, "sha512-g36AJreJrgf9AAjOfbdFHEFUTymBgzbWHoEDElZ+fDKvqBINDiUVKzDApwc7C7kGPMFqQBaoEHnQRxf2IqfKZQ=="],
 
