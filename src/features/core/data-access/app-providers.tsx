@@ -9,7 +9,7 @@ import { useTheme } from '@/features/shell/data-access/use-theme'
 import { ShellUiThemeStatusBar } from '@/features/shell/ui/shell-ui-theme-status-bar'
 
 const cluster = createSolanaDevnet()
-const identity = { name: 'Bee Forge' }
+const identity = { name: 'Bee Forge', uri: 'bee-forge://bee-forge' }
 const queryClient = new QueryClient()
 
 export function AppProviders({ children }: { children: ReactNode }) {
